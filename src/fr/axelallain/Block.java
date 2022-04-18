@@ -3,11 +3,11 @@ package fr.axelallain;
 import java.util.Arrays;
 
 public class Block {
-    private String index;
-    private String timestamp;
-    private String data;
-    private String previousHash;
-    private String hash;
+    private final String index;
+    private final String timestamp;
+    private final String data;
+    private final String previousHash;
+    private final String hash;
 
     public Block(String index, String timestamp, String data, String previousHash) {
         this.index = index;
