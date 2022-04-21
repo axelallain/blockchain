@@ -4,11 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-    	Block[] blockchain = { new Block("0", "", "", "") };
+    	Blockchain blockchain = new Blockchain();
 
-	    System.out.println("Genesis block hash : " + blockchain[0].getHash());
+		System.out.println("Genesis block hash : " + blockchain.getBlockchain().get(0).getHash());
 
-	    Block newBlock = new Block("1", "18/04/22", "A sent 4 to B", blockchain[0].getHash());
-	    System.out.println("New block hash : " + newBlock.getHash());
+    	blockchain.addBlock(new Block("1", "18/04/22", "A sent 4 to B"));
+		blockchain.addBlock(new Block("2", "18/04/22", "A sent 4 to B"));
     }
 }
